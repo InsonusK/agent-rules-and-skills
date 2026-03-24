@@ -1,0 +1,3 @@
+[submodule "dotnet"]
+	path = dotnet
+	url = git@github.com:InsonusK/antigravity-agent-dotnet.git
