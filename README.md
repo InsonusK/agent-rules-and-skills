@@ -13,5 +13,10 @@ rm -rf <folder>
 rm -rf .git/modules/<folder>
 ```
 
+## Формирование итоговых Skill & Rules
+1. Запустить `./sync.sh [framework]`
+2. Скопировать `.output` в проект `.agents`
+
 ## Полезные другие библиотеки
 - [Antropics skills](https://github.com/anthropics/skills/blob/main/README.md)
+- [Google antigravity doc](https://antigravity.google/docs/models)
