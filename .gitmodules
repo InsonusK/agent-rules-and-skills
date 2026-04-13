@@ -1,6 +1,3 @@
-[submodule "dotnet"]
-	path = dotnet
-	url = git@github.com:InsonusK/antigravity-agent-dotnet.git
 [submodule "angular"]
 	path = angular
 	url = git@github.com:InsonusK/agent-angular-rule-and-skill.git
