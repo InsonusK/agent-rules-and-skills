@@ -2,6 +2,16 @@
 Репозиторий с включенными другими репозиториями по agent rule & skill
 список подключенных репозиторием смотрив [gitmodules](.gitmodules)
 
+## Установка
+```shell
+git clone --recurse-submodules git@github.com:InsonusK/agent-rules-and-skills.git
+```
+
+если уже сделали `git clone`
+```shell
+git submodule update --init --recursive
+```
+
 ## Добавление нновых репозитариев
 добавление модуля `git submodule add {git path} {folder}`
 
