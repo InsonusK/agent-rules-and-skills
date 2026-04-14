@@ -8,12 +8,23 @@ mkdir -p .output/skills
 mkdir -p .output/rules
 mkdir -p .output/workflows
 
-cp -r core/skills/* .output/skills/
-cp -r core/rules/* .output/rules/
-cp -r core/workflows/* .output/workflows/
+copy_if_exists () {
+  local src=$1
+  local dest=$2
 
+  if [ -d "$src" ] && [ "$(ls -A "$src" 2>/dev/null)" ]; then
+    cp -r "$src"/* "$dest"/
+  fi
+}
+
+# core
+copy_if_exists core/skills .output/skills
+copy_if_exists core/rules .output/rules
+copy_if_exists core/workflows .output/workflows
+
+# stacks
 for stack in $STACKS; do
-  cp -r $stack/skills/* .output/skills/
-  cp -r $stack/rules/* .output/rules/
-  cp -r $stack/workflows/* .output/workflows/
+  copy_if_exists "$stack/skills" .output/skills
+  copy_if_exists "$stack/rules" .output/rules
+  copy_if_exists "$stack/workflows" .output/workflows
 done

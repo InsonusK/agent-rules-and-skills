@@ -1,5 +1,1 @@
-.output/rules/implementition-plan-metadata.md
-.output/rules/unittest.md
-.output/skills/unittest/SKILL.md
-.output/skills/unittest-testplan/SKILL.md
-.output/skills/unittest-testplan/templates/usecases_list.md
+.output/*
